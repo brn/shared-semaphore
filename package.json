@@ -1,0 +1,33 @@
+{
+  "name": "shared-semaphore",
+  "version": "1.0.0",
+  "description": "ES2017 Atomics and SharedArrayBuffer based Semaphore for WebWorker.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brn/shared-semaphore.git"
+  },
+  "keywords": [
+    "ES",
+    "2017",
+    "Ecmascript",
+    "javascript",
+    "js",
+    "es",
+    "web-worker",
+    "WebWorker",
+    "web",
+    "worker",
+    "Atomics",
+    "SharedArrayBuffer"
+  ],
+  "author": "Taketoshi Aono (brn)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/brn/shared-semaphore/issues"
+  },
+  "homepage": "https://github.com/brn/shared-semaphore#readme"
+}
