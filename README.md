@@ -46,3 +46,56 @@ self.addEventListener('message', function(e) {
 }, false);
 
 ```
+
+# API
+
+## Semaphore
+
+**`Semaphore(allowedSectionCount, opt_sharedArray): Semaphore`**
+
+Instantiate Semaphore.  
+If opt_sharedArray is passed, this semaphore constructed from that SharedArrayBuffer.
+
+*args*
+
+* allowedSectionCount: The number which allowed to enter critical section,
+* opt_sharedArray: Optional SharedArrayBuffer.
+
+
+**`Semaphore.fromShared(sharedArray: SharedArrayBuffer, allowedSectionCount: number): Semaphore`**
+
+Create Semaphore instance from existing SharedArrayBuffer.
+
+*args*
+
+* sharedArray: Constructed SharedArrayBuffer.
+* allowedSectionCount: The number which allowed to enter critical section.
+
+
+**`get Semaphore#shared(): SharedArrayBuffer`**
+
+Return SharedArrayBuffer.  
+This method often used in main thread.
+
+
+**`Semaphore#signal()`**
+
+Release occupied section.
+
+
+## Mutex
+
+*inherit Semaphore* 
+
+**`Mutex(opt_sharedArray): Mutex`**
+
+Instantiate Mutex.  
+If opt_sharedArray is passed, this mutex constructed from that SharedArrayBuffer.
+
+*args*
+
+* opt_sharedArray: Optional SharedArrayBuffer.
+
+**`Mutex.fromShared(sharedArray: SharedArrayBuffer): Mutex`**
+
+Create Mutex instance from existing SharedArrayBuffer.

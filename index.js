@@ -105,4 +105,9 @@ class Mutex extends Semaphore {
   constructor(opt_sharedArray) {
     super(1, opt_sharedArray);
   }
+
+
+  static fromShared(sharedArray) {
+    return new Mutex(sharedArray);
+  }  
 }
