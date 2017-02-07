@@ -5,8 +5,8 @@ ES2017 Atomics and SharedArrayBuffer based Semaphore for WebWorker.
 Current works on Google Chrome Canary only.
 
 If you don't know about SharedArrayBuffer and Atomics,  
-Following pages explain what, how, why.
-[Shared Memory and Atomics](https://github.com/tc39/ecmascript_sharedmem).
+Following pages explain what, how, why.  
+[Shared Memory and Atomics](https://github.com/tc39/ecmascript_sharedmem).  
 [ECMAScript Shared Memory and Atomics](http://tc39.github.io/ecmascript_sharedmem/shmem.html#Overview)
 
 # install
